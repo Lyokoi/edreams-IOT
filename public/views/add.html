@@ -1,0 +1,22 @@
+<div class="container">
+  <div class="panel panel-default">
+    <div class="panel-heading">Add Data<span class="label label-info pull-right">{{ records.length }}</span></div>
+    <div class="panel-body">
+        <form>
+            <div class="form-group">
+
+                <!-- BIND THIS VALUE TO formData.text IN ANGULAR -->
+                <input type="text" class="form-control text-center" placeholder="Object name" ng-model="formData.name" >
+                <input type="text" class="form-control input-lg text-center" placeholder="Object temperature" ng-model="formData.temperature">
+                <input type="text" class="form-control input-lg text-center" placeholder="Object humidity" ng-model="formData.humidity">
+                <input type="text" class="form-control input-lg text-center" placeholder="Object sound" ng-model="formData.sound">
+                <input type="text" class="form-control input-lg text-center" placeholder="Object light" ng-model="formData.light">
+                <input type="text" class="form-control input-lg text-center" placeholder="Object movement" ng-model="formData.movement">
+            </div>
+
+            <!-- createToDo() WILL CREATE NEW TODOS -->
+            <button type="submit" class="btn btn-primary btn-lg" ng-click="createRecord()">Add</button>
+        </form>
+    </div>
+  </div>
+</div>
