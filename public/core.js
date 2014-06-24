@@ -8,8 +8,8 @@ angular.module('iotApplication', ['ngRoute'])
       	$routeProvider
 
 			// home page
-			.when('/home', {
-				templateUrl: 'views/index.html',
+			.when('/', {
+				templateUrl: 'views/home.html',
 				controller: 'mainController'
 			})
 
